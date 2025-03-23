@@ -1,3 +1,6 @@
+import printMyName from './moduleOne.js';
+console.log(printMyName);
+
 const userProfile = {
   name: 'Misha',
   commentsQty: 23,
@@ -71,7 +74,6 @@ numbers.forEach((number) => {
 });
 
 console.log(squareNumbers); // [1, 4, 9, 16, 25]
-
 
 const numSquare = numbers.forEach((number) => number * number);
 console.log(numSquare); // undefined
