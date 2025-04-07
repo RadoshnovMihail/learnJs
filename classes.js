@@ -33,19 +33,33 @@
 
 // Find sum of top-left to bottom-right diagonals
 
-const array = [
-         [5, 9, 1, 0],
-         [8, 7, 2, 3],
-         [1, 4, 1, 9],
-         [2, 3, 8, 2]
-        ];
+// const array = [
+//          [5, 9, 1, 0],
+//          [8, 7, 2, 3],
+//          [1, 4, 1, 9],
+//          [2, 3, 8, 2]
+//         ];
 
-function diagonalSum(matrix){
-  let result = 0;
-  for (let i = 0; i < matrix.length; i++){
-    result += matrix[i][i]
-  }
-  return  result
+// function diagonalSum(matrix){
+//   let result = 0;
+//   for (let i = 0; i < matrix.length; i++){
+//     result += matrix[i][i]
+//   }
+//   return  result
+// }
+
+// console.log(diagonalSum(array));
+
+const num = '7';
+const str = 'abc';
+const symbol = '!';
+const undef = ' ';
+
+function isNum (x){
+  return x.length === 1 && x >= '0' && x <= '9'
 }
 
-console.log(diagonalSum(array));
+console.log(isNum(num))
+console.log(isNum(str))
+console.log(isNum(symbol))
+console.log(isNum(undef))

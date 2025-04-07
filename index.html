@@ -4,9 +4,33 @@
     <meta charset="utf-8" />
     <title>Web Page Structure</title>
   </head> 
-  <body> 
-     <picture>
-     <img src="https://picsum.photos/id/211/1025/900" alt="">
-     </picture>
+  <body>
+    <div class="wrapper">
+      <div>Начало</div>
+   <ul>
+     <li>Информация</li>
+   </ul>
+   <div>Конец</div>
+    </div>
+  <script>
+   console.log(document.ul.childNodes) 
+  </script>
   </body>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+</head>
+<body>
+  <div>Начало</div>
+  <ul>
+    <li>Информация</li>
+  </ul>
+  <div>Конец</div>
+
+  <script>
+    console.log(document.body.childNodes); // Выведет все дочерние узлы body
+  </script>
+</body>
+</html>
