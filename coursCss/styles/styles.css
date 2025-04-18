@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100vh;
+  max-width: 600px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  font-family: Poppins;
+}
+
+.header {
+  text-align: center;
+  padding: 19px 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.title {
+  padding: 20px 0 12px 0;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0%;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 56px;
+}
+
+.catalog-title {
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -1%;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-price {
+  color: #489dff;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+
+.buy {
+  width: 131px;
+  height: 48px;
+  background: #489dff;
+  color: #ffffff;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 13%;
+  cursor: pointer;
+}
+
+.footer {
+  padding-top: 24px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-text {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.dugmail {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-messages{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.icon + .icon{
+    margin-left: 8px;
+}
