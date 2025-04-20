@@ -10,3 +10,4 @@ let arr = n.toString().split('').map(el => parseInt(el)).sort((a, b) => a - b);
 console.log(trickyDoubles(15));// 30
 console.log(trickyDoubles(100));// 200
 console.log(trickyDoubles(4343));// 4343
+

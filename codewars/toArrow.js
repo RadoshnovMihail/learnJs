@@ -63,3 +63,24 @@ function removeDuplicates(nums) {
 }
 
 console.log(removeDuplicates([1, 3, 5, 4, 3]))
+
+
+function rep(n, num){
+    let sortArr = n.sort((a, b) => a - b);
+    let left = 0;
+    let right = n.length - 1;
+
+    while(left < right){
+        let currentSum = sortArr[left] + sortArr[right];
+        if(currentSum === num){
+            return [n[left], n[right]];
+        } else if ( n[left] < n[right]){
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return null
+}
+
+console.log(rep([1, 3, 5, 4, 3], 9));
