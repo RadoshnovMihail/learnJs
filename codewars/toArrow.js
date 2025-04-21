@@ -4,7 +4,6 @@ let arr = [1,3, 5, 6, 7];
 function sum (x, n){
 let left = 0;
 let right = x.length - 1;
-
 while(left < right){
     const currentSum = x[left] + x[right];
 
