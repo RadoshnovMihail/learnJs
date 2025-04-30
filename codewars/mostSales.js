@@ -57,4 +57,4 @@ const top2 = (products, amounts, prices) => products
 const top3 = (products, amounts, prices) => products.map((p, i) => [p, amounts[i]* prices[i], i]).sort((a, b) => b[1] - a[1]).slice(0, 3).map(arr => arr[0]);
 
 
-    console.log(top3(['Computer','Cell Phones','Vacuum Cleaner'], [3, 24, 8], [199, 299, 399]))
+    console.log(top3(['Computer','Cell Phones','Vacuum Cleaner'], [3, 24, 8], [199, 299, 399]));
