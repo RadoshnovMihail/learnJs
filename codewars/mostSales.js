@@ -41,3 +41,20 @@ console.log(top3([ 'Cell Phones',
   [ 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20 ]
 ))
 // Cell Phones,  Vacuum Cleaner, Computer
+
+
+
+const top2 = (products, amounts, prices) => products
+    .map((p, i) => [p, amounts[i] * prices[i], i])
+    .sort((a, b) => b[1] - a[1] || a[2] - b[2])
+    .slice(0, 3)
+    .map(arr => arr[0]);
+
+    console.log(top2(['Computer','Cell Phones','Vacuum Cleaner'], [3, 24, 8], [199, 299, 399]))
+
+
+
+const top3 = (products, amounts, prices) => products.map((p, i) => [p, amounts[i]* prices[i], i]).sort((a, b) => b[1] - a[1]).slice(0, 3).map(arr => arr[0]);
+
+
+    console.log(top3(['Computer','Cell Phones','Vacuum Cleaner'], [3, 24, 8], [199, 299, 399]))
