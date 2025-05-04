@@ -1,19 +1,3 @@
-function digitsAverage(input){
-    let result = 0; 
-    let arr = input.toString().split('').map(e => Number(e));
-        let prev = 0;
-        let next = 0;
-    for(let i = 0; i < arr.length; i++){
-       prev = 
-    }
-    return Math.ceil(result)
-}
-
-console.log(digitsAverage(345))
-console.log(digitsAverage(34831))
-console.log(digitsAverage(89))
-console.log(digitsAverage(246))
-console.log(digitsAverage(245))
 
 
 // let a = [1,3,4,5,6,7];
