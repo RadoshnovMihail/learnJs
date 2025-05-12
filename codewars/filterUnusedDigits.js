@@ -35,4 +35,10 @@ console.log(s(2015, 8, 26))//379
 
 
 
-
+function u ( ...arr){
+    let digits = arr.join('');
+    console.log(digits)
+    return [0,1,2,3,4,5,6,7,8,9].filter(x => !digits.includes(x)).join('');
+}
+console.log(u(12, 34, 56, 78))//09
+console.log(u(2015, 8, 26))//379
