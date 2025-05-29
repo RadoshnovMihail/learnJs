@@ -12,3 +12,19 @@ function solution(fullText, search){
 
 console.log(solution("aa_bb_cc_dd_bb_e", "bb"));
 console.log(solution("aaabbbcccc", "bbb"));
+
+
+
+
+console.log("aa_bb_cc_dd_bb_e".indexOf("bb", 0));
+
+
+
+function s(fullText, search){
+   return fullText.split(search).length - 1;
+}
+
+
+console.log(s("aa_bb_cc_dd_bb_e", "bb"));
+console.log(s("aaabbbcccc", "bbb"));
+
